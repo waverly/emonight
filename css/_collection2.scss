@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'general';
+@import 'mixins';
+
+div.collection2{
+  position: relative;
+  height: 500px;
+  background-color: $grey;
+  padding: $margin-sides;
+
+  .featured{
+    position: absolute;
+    top: $margin-sides;
+    left: $margin-sides;
+  }
+
+  .view-all{
+    position: absolute;
+    top: $margin-sides;
+    right: $margin-sides;
+  }
+
+  .products{
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+
+    .products-ul{
+      height: 300px;
+      display: flex;
+      justify-content: space-between;
+      li{
+        height: 100%;
+        display: inline-block;
+        img{
+          height: 100%;
+        }
+      }
+    }
+  }
+}

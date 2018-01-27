@@ -1,0 +1,1216 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*.................................................................................*/
+/*$break-large-desktop: 2500px;*/
+/*$break-infinite: 500000px;*/
+/*....................................SCSS MIXINS..................................*/
+/*....................................General settings..................................*/
+/*.....................TEXT MARK STYLES......................*/
+::-moz-selection {
+  background: transparent;
+  text-shadow: none; }
+
+::selection {
+  background: transparent;
+  text-shadow: none; }
+
+/*.....................ACTIVE CLASSES......................*/
+.active {
+  opacity: 0.1; }
+
+.blacked_text {
+  color: #FFFFFF; }
+
+.blacked_path {
+  fill: #FFFFFF; }
+
+.blacked_background {
+  background-color: #000000; }
+
+/*....................HIDING SCROLLBAR.....................*/
+::-webkit-scrollbar {
+  display: none; }
+
+* {
+  -webkit-overflow-scrolling: touch; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  outline: 0; }
+
+/*.....................GENERAL STYLES......................*/
+html {
+  font-family: helvetica;
+  width: 100%;
+  margin: 0, 0;
+  padding: 0, 0;
+  box-sizing: border-box;
+  background-color: transparent; }
+
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0, 0;
+  padding: 0, 0;
+  display: block;
+  position: relative;
+  background: #FFFFFF; }
+
+p, a, li {
+  font-size: 12px;
+  list-style-type: none;
+  letter-spacing: 1px;
+  color: #000000; }
+
+input, textarea, select, a, li {
+  text-decoration: none; }
+
+a {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    a {
+      font-size: 12px;
+      line-height: 17px; } }
+
+.a-hover {
+  color: #000000;
+  transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease; }
+  .a-hover:hover {
+    color: #F5F5F5;
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/ }
+    @media only screen and (min-width: 0px) and (max-device-width: 767px) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: portrait) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: landscape) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+
+p {
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    p {
+      font-size: 12px;
+      line-height: 17px; } }
+
+h1 {
+  font-size: 90px;
+  line-height: 50px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 2px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h1 {
+      font-size: 25px; } }
+
+h2 {
+  font-size: 52px;
+  line-height: 36px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 0px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h2 {
+      font-size: 20px;
+      line-height: 36px; } }
+
+h3 {
+  font-size: 36px;
+  line-height: 30px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h3 {
+      font-size: 18px;
+      line-height: 20px; } }
+
+.pop {
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  z-index: 14;
+  border-top: 1px solid black;
+  background: rgba(255, 255, 255, 0.2); }
+
+/*.........................MAIN............................*/
+table {
+  width: 100vw;
+  height: 100vh; }
+  table tr td {
+    vertical-align: middle; }
+
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*.................................................................................*/
+/*$break-large-desktop: 2500px;*/
+/*$break-infinite: 500000px;*/
+/*....................................SCSS MIXINS..................................*/
+/*....................................General settings..................................*/
+/*.....................TEXT MARK STYLES......................*/
+::-moz-selection {
+  background: transparent;
+  text-shadow: none; }
+
+::selection {
+  background: transparent;
+  text-shadow: none; }
+
+/*.....................ACTIVE CLASSES......................*/
+.active {
+  opacity: 0.1; }
+
+.blacked_text {
+  color: #FFFFFF; }
+
+.blacked_path {
+  fill: #FFFFFF; }
+
+.blacked_background {
+  background-color: #000000; }
+
+/*....................HIDING SCROLLBAR.....................*/
+::-webkit-scrollbar {
+  display: none; }
+
+* {
+  -webkit-overflow-scrolling: touch; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  outline: 0; }
+
+/*.....................GENERAL STYLES......................*/
+html {
+  font-family: helvetica;
+  width: 100%;
+  margin: 0, 0;
+  padding: 0, 0;
+  box-sizing: border-box;
+  background-color: transparent; }
+
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0, 0;
+  padding: 0, 0;
+  display: block;
+  position: relative;
+  background: #FFFFFF; }
+
+p, a, li {
+  font-size: 12px;
+  list-style-type: none;
+  letter-spacing: 1px;
+  color: #000000; }
+
+input, textarea, select, a, li {
+  text-decoration: none; }
+
+a {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    a {
+      font-size: 12px;
+      line-height: 17px; } }
+
+.a-hover {
+  color: #000000;
+  transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease; }
+  .a-hover:hover {
+    color: #F5F5F5;
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/ }
+    @media only screen and (min-width: 0px) and (max-device-width: 767px) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: portrait) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: landscape) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+
+p {
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    p {
+      font-size: 12px;
+      line-height: 17px; } }
+
+h1 {
+  font-size: 90px;
+  line-height: 50px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 2px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h1 {
+      font-size: 25px; } }
+
+h2 {
+  font-size: 52px;
+  line-height: 36px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 0px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h2 {
+      font-size: 20px;
+      line-height: 36px; } }
+
+h3 {
+  font-size: 36px;
+  line-height: 30px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h3 {
+      font-size: 18px;
+      line-height: 20px; } }
+
+.pop {
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  z-index: 14;
+  border-top: 1px solid black;
+  background: rgba(255, 255, 255, 0.2); }
+
+/*.........................MAIN............................*/
+table {
+  width: 100vw;
+  height: 100vh; }
+  table tr td {
+    vertical-align: middle; }
+
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*.................................................................................*/
+/*$break-large-desktop: 2500px;*/
+/*$break-infinite: 500000px;*/
+/*....................................SCSS MIXINS..................................*/
+nav {
+  height: 150px;
+  width: 100vw;
+  top: 0;
+  z-index: 13;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  align-items: center; }
+  nav .logo {
+    width: 150px;
+    height: auto;
+    width: 33%;
+    justify-content: flex-start;
+    padding: 25px; }
+    nav .logo img {
+      width: 175px; }
+  nav .nav-ul li {
+    display: inline-block; }
+  nav .nav-items {
+    width: 66%;
+    display: flex;
+    justify-content: center; }
+    nav .nav-items li {
+      padding: 0em 1em; }
+  nav .nav-social {
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px; }
+    nav .nav-social .social-ul li {
+      padding: 0 .5em; }
+    nav .nav-social .cart-ul li {
+      margin-left: 1em; }
+
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*.................................................................................*/
+/*$break-large-desktop: 2500px;*/
+/*$break-infinite: 500000px;*/
+/*....................................SCSS MIXINS..................................*/
+/*....................................General settings..................................*/
+/*.....................TEXT MARK STYLES......................*/
+::-moz-selection {
+  background: transparent;
+  text-shadow: none; }
+
+::selection {
+  background: transparent;
+  text-shadow: none; }
+
+/*.....................ACTIVE CLASSES......................*/
+.active {
+  opacity: 0.1; }
+
+.blacked_text {
+  color: #FFFFFF; }
+
+.blacked_path {
+  fill: #FFFFFF; }
+
+.blacked_background {
+  background-color: #000000; }
+
+/*....................HIDING SCROLLBAR.....................*/
+::-webkit-scrollbar {
+  display: none; }
+
+* {
+  -webkit-overflow-scrolling: touch; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  outline: 0; }
+
+/*.....................GENERAL STYLES......................*/
+html {
+  font-family: helvetica;
+  width: 100%;
+  margin: 0, 0;
+  padding: 0, 0;
+  box-sizing: border-box;
+  background-color: transparent; }
+
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0, 0;
+  padding: 0, 0;
+  display: block;
+  position: relative;
+  background: #FFFFFF; }
+
+p, a, li {
+  font-size: 12px;
+  list-style-type: none;
+  letter-spacing: 1px;
+  color: #000000; }
+
+input, textarea, select, a, li {
+  text-decoration: none; }
+
+a {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    a {
+      font-size: 12px;
+      line-height: 17px; } }
+
+.a-hover {
+  color: #000000;
+  transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease; }
+  .a-hover:hover {
+    color: #F5F5F5;
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/ }
+    @media only screen and (min-width: 0px) and (max-device-width: 767px) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: portrait) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: landscape) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+
+p {
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    p {
+      font-size: 12px;
+      line-height: 17px; } }
+
+h1 {
+  font-size: 90px;
+  line-height: 50px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 2px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h1 {
+      font-size: 25px; } }
+
+h2 {
+  font-size: 52px;
+  line-height: 36px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 0px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h2 {
+      font-size: 20px;
+      line-height: 36px; } }
+
+h3 {
+  font-size: 36px;
+  line-height: 30px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h3 {
+      font-size: 18px;
+      line-height: 20px; } }
+
+.pop {
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  z-index: 14;
+  border-top: 1px solid black;
+  background: rgba(255, 255, 255, 0.2); }
+
+/*.........................MAIN............................*/
+table {
+  width: 100vw;
+  height: 100vh; }
+  table tr td {
+    vertical-align: middle; }
+
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*.................................................................................*/
+/*$break-large-desktop: 2500px;*/
+/*$break-infinite: 500000px;*/
+/*....................................SCSS MIXINS..................................*/
+div.collection1 {
+  width: 100vw;
+  max-height: 100vh;
+  z-index: 7;
+  text-align: center; }
+  div.collection1 h1 {
+    color: white;
+    text-decoration: underline;
+    position: absolute;
+    z-index: 8;
+    width: 100%;
+    height: 100px;
+    top: 30%; }
+  div.collection1 img {
+    width: 100%; }
+
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*.................................................................................*/
+/*$break-large-desktop: 2500px;*/
+/*$break-infinite: 500000px;*/
+/*....................................SCSS MIXINS..................................*/
+/*....................................General settings..................................*/
+/*.....................TEXT MARK STYLES......................*/
+::-moz-selection {
+  background: transparent;
+  text-shadow: none; }
+
+::selection {
+  background: transparent;
+  text-shadow: none; }
+
+/*.....................ACTIVE CLASSES......................*/
+.active {
+  opacity: 0.1; }
+
+.blacked_text {
+  color: #FFFFFF; }
+
+.blacked_path {
+  fill: #FFFFFF; }
+
+.blacked_background {
+  background-color: #000000; }
+
+/*....................HIDING SCROLLBAR.....................*/
+::-webkit-scrollbar {
+  display: none; }
+
+* {
+  -webkit-overflow-scrolling: touch; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  outline: 0; }
+
+/*.....................GENERAL STYLES......................*/
+html {
+  font-family: helvetica;
+  width: 100%;
+  margin: 0, 0;
+  padding: 0, 0;
+  box-sizing: border-box;
+  background-color: transparent; }
+
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0, 0;
+  padding: 0, 0;
+  display: block;
+  position: relative;
+  background: #FFFFFF; }
+
+p, a, li {
+  font-size: 12px;
+  list-style-type: none;
+  letter-spacing: 1px;
+  color: #000000; }
+
+input, textarea, select, a, li {
+  text-decoration: none; }
+
+a {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    a {
+      font-size: 12px;
+      line-height: 17px; } }
+
+.a-hover {
+  color: #000000;
+  transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease; }
+  .a-hover:hover {
+    color: #F5F5F5;
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/ }
+    @media only screen and (min-width: 0px) and (max-device-width: 767px) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: portrait) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: landscape) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+
+p {
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    p {
+      font-size: 12px;
+      line-height: 17px; } }
+
+h1 {
+  font-size: 90px;
+  line-height: 50px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 2px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h1 {
+      font-size: 25px; } }
+
+h2 {
+  font-size: 52px;
+  line-height: 36px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 0px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h2 {
+      font-size: 20px;
+      line-height: 36px; } }
+
+h3 {
+  font-size: 36px;
+  line-height: 30px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h3 {
+      font-size: 18px;
+      line-height: 20px; } }
+
+.pop {
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  z-index: 14;
+  border-top: 1px solid black;
+  background: rgba(255, 255, 255, 0.2); }
+
+/*.........................MAIN............................*/
+table {
+  width: 100vw;
+  height: 100vh; }
+  table tr td {
+    vertical-align: middle; }
+
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*.................................................................................*/
+/*$break-large-desktop: 2500px;*/
+/*$break-infinite: 500000px;*/
+/*....................................SCSS MIXINS..................................*/
+div.collection2 {
+  position: relative;
+  height: 500px;
+  background-color: #e2e2e2;
+  padding: 25px; }
+  div.collection2 .featured {
+    position: absolute;
+    top: 25px;
+    left: 25px; }
+  div.collection2 .view-all {
+    position: absolute;
+    top: 25px;
+    right: 25px; }
+  div.collection2 .products {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px; }
+    div.collection2 .products .products-ul {
+      height: 300px;
+      display: flex;
+      justify-content: space-between; }
+      div.collection2 .products .products-ul li {
+        height: 100%;
+        display: inline-block; }
+        div.collection2 .products .products-ul li img {
+          height: 100%; }
+
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*.................................................................................*/
+/*$break-large-desktop: 2500px;*/
+/*$break-infinite: 500000px;*/
+/*....................................SCSS MIXINS..................................*/
+/*....................................General settings..................................*/
+/*.....................TEXT MARK STYLES......................*/
+::-moz-selection {
+  background: transparent;
+  text-shadow: none; }
+
+::selection {
+  background: transparent;
+  text-shadow: none; }
+
+/*.....................ACTIVE CLASSES......................*/
+.active {
+  opacity: 0.1; }
+
+.blacked_text {
+  color: #FFFFFF; }
+
+.blacked_path {
+  fill: #FFFFFF; }
+
+.blacked_background {
+  background-color: #000000; }
+
+/*....................HIDING SCROLLBAR.....................*/
+::-webkit-scrollbar {
+  display: none; }
+
+* {
+  -webkit-overflow-scrolling: touch; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  outline: 0; }
+
+/*.....................GENERAL STYLES......................*/
+html {
+  font-family: helvetica;
+  width: 100%;
+  margin: 0, 0;
+  padding: 0, 0;
+  box-sizing: border-box;
+  background-color: transparent; }
+
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0, 0;
+  padding: 0, 0;
+  display: block;
+  position: relative;
+  background: #FFFFFF; }
+
+p, a, li {
+  font-size: 12px;
+  list-style-type: none;
+  letter-spacing: 1px;
+  color: #000000; }
+
+input, textarea, select, a, li {
+  text-decoration: none; }
+
+a {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    a {
+      font-size: 12px;
+      line-height: 17px; } }
+
+.a-hover {
+  color: #000000;
+  transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease; }
+  .a-hover:hover {
+    color: #F5F5F5;
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/ }
+    @media only screen and (min-width: 0px) and (max-device-width: 767px) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: portrait) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: landscape) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+
+p {
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    p {
+      font-size: 12px;
+      line-height: 17px; } }
+
+h1 {
+  font-size: 90px;
+  line-height: 50px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 2px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h1 {
+      font-size: 25px; } }
+
+h2 {
+  font-size: 52px;
+  line-height: 36px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 0px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h2 {
+      font-size: 20px;
+      line-height: 36px; } }
+
+h3 {
+  font-size: 36px;
+  line-height: 30px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h3 {
+      font-size: 18px;
+      line-height: 20px; } }
+
+.pop {
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  z-index: 14;
+  border-top: 1px solid black;
+  background: rgba(255, 255, 255, 0.2); }
+
+/*.........................MAIN............................*/
+table {
+  width: 100vw;
+  height: 100vh; }
+  table tr td {
+    vertical-align: middle; }
+
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*.................................................................................*/
+/*$break-large-desktop: 2500px;*/
+/*$break-infinite: 500000px;*/
+/*....................................SCSS MIXINS..................................*/
+.collection3 {
+  position: relative;
+  height: 130vh; }
+  .collection3 .left {
+    width: 50%;
+    position: absolute;
+    left: 0; }
+    .collection3 .left img {
+      width: 100%; }
+  .collection3 .right {
+    width: 50%;
+    right: 0;
+    position: absolute; }
+    .collection3 .right img {
+      width: 100%; }
+
+.music-we-love {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: url(../assets/images/music-we-love.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .music-we-love h2 {
+    position: absolute; }
+  .music-we-love img {
+    width: 100vw; }
+
+div.video1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: limegreen; }
+
+.enla {
+  background: url(../assets/images/ENLA.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .enla .enla-logo {
+    width: 50%;
+    margin: 150px 0; }
+    .enla .enla-logo img {
+      width: 100%; }
+  .enla .dates {
+    width: 80%; }
+  .enla .entries {
+    width: 100%; }
+    .enla .entries .entry {
+      height: 150px;
+      border-bottom: 1px solid white;
+      display: flex;
+      align-items: center; }
+      .enla .entries .entry li, .enla .entries .entry p, .enla .entries .entry span, .enla .entries .entry div {
+        color: white; }
+    .enla .entries .date {
+      width: 15%;
+      display: inline-block;
+      text-align: left; }
+      .enla .entries .date .date-wrap {
+        text-align: center;
+        width: 50px; }
+      .enla .entries .date .number {
+        font-size: 1.8em;
+        line-height: 2em; }
+      .enla .entries .date .month {
+        display: block;
+        TEXT-TRANSFORM: UPPERCASE;
+        LETTER-SPACING: 2PX; }
+    .enla .entries .location {
+      width: 70%;
+      display: inline-block; }
+      .enla .entries .location .city {
+        font-size: 1.4em;
+        line-height: 2.2em; }
+    .enla .entries .tickets {
+      width: 13%;
+      display: inline-block;
+      text-align: right; }
+
+.site-wrap {
+  margin-top: 150px; }
+
+/*# sourceMappingURL=style.css.map */

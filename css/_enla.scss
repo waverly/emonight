@@ -1,0 +1,70 @@
+.enla{
+  background: url(../assets/images/ENLA.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .enla-logo{
+    width: 50%;
+    margin: $margin-top 0;
+    img{
+      width: 100%;
+    }
+  }
+  .dates{
+    width: 80%;
+  }
+
+  .entries{
+    width: 100%;
+    .entry{
+      height: 150px;
+      border-bottom: 1px solid white;
+      display: flex;
+      // padding-top: 50px;
+      align-items: center;
+
+      li, p, span, div{
+        color: white;
+      }
+    }
+    .date{
+      width: 15%;
+      display: inline-block;
+      text-align: left;
+      .date-wrap{
+        text-align: center;
+        width: 50px;
+      }
+      .number{
+        font-size: 1.8em;
+        line-height: 2em;
+      }
+      .month{
+        display: block;
+        TEXT-TRANSFORM: UPPERCASE;
+        LETTER-SPACING: 2PX;
+      }
+    }
+    .location{
+      width: 70%;
+      display: inline-block;
+      .city{
+        font-size: 1.4em;
+        line-height: 2.2em;
+      }
+    }
+    .tickets{
+      width: 13%;
+      display: inline-block;
+      text-align: right;
+    }
+
+  }
+}

@@ -1,0 +1,60 @@
+@import 'variables';
+@import 'general';
+@import 'mixins';
+
+nav{
+  height: $nav-height;
+  width: 100vw;
+  top: 0;
+  z-index: $z-nav;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  align-items: center;
+
+  .logo{
+    width: 150px;
+    height: auto;
+    width: 33%;
+    justify-content: flex-start;
+    padding: $margin-sides;
+    img{
+      width: 175px;
+    }
+  }
+
+  .nav-ul{
+    li{
+      display: inline-block;
+    }
+  }
+
+  .nav-items{
+    width: 66%;
+    display: flex;
+    justify-content: center;
+    li{
+        padding: 0em 1em;
+
+      }
+    }
+
+    .nav-social{
+      width: 33%;
+      display: flex;
+      justify-content: flex-end;
+      padding: $margin-sides;
+
+      .social-ul{
+        li{
+          padding: 0 .5em;
+        }
+      }
+
+      .cart-ul{
+        li{
+          margin-left: 1em;
+        }
+      }
+    }
+  }
