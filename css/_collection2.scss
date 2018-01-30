@@ -20,8 +20,10 @@ div.collection2{
     right: $margin-sides;
     font-size: 1.5em;
     font-family: $font-family-p;
+    display: flex;
     a{
-      font-size: .7em;
+      font-size: 14px;
+      font-family: $font-family-p;
     }
     span{
       margin-left: 1em;
@@ -95,8 +97,15 @@ div.collection2{
 
 @media screen and (max-width: $break-phone-landscape){
 
+  div.collection2 .products{
+    margin-top: 50px;
+  }
+
   div.collection2 .products .products-ul li.product .caption {
     visibility: visible;
   }
-
+  div.collection2 .products .products-ul li.product{
+    min-height: 350px;
+    width: 70%;
+  }
 }

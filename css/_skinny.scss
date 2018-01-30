@@ -13,20 +13,10 @@
 
 .music-we-love{
   min-height: 200px;
-  // background: url(../assets/images/music-we-love.png) no-repeat center center;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
 }
 
 .mailing-list{
   min-height: 200px;
-  // background: url(../assets/images/mailinglist.png) no-repeat center center;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
 
   form{
     width: 80%;
@@ -80,12 +70,17 @@
         margin-bottom: 1em;
         font-size: 14px;
       }
+
+      button{
+        width: 140px;
+      }
     }
   }
 }
 
 @media screen and (max-width: $break-phone-landscape){
-  h2{
+  .skinny h2{
     font-size: 24px;
+    text-align: center;
   }
 }

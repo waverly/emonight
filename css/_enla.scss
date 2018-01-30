@@ -84,6 +84,17 @@
       display: inline-block;
       text-align: right;
     }
+  }
+}
 
+@media screen and (max-width: $break-phone-landscape){
+  .enla .enla-logo {
+      width: 90%;
+      margin-top: 100px;
+      margin-bottom: 50px;
+  }
+  
+  .enla .bit-widget-container {
+    width: 90%;
   }
 }

@@ -1158,9 +1158,11 @@ div.collection2 {
     top: 50px;
     right: 25px;
     font-size: 1.5em;
-    font-family: "neutralreg", helvetica, sans-serif; }
+    font-family: "neutralreg", helvetica, sans-serif;
+    display: flex; }
     div.collection2 .view-all a {
-      font-size: .7em; }
+      font-size: 14px;
+      font-family: "neutralreg", helvetica, sans-serif; }
     div.collection2 .view-all span {
       margin-left: 1em; }
   div.collection2 .products {
@@ -1204,8 +1206,15 @@ div.collection2 {
       align-items: center;
       text-align: center; } }
 @media screen and (max-width: 767px) {
+  div.collection2 .products {
+    margin-top: 50px; }
+
   div.collection2 .products .products-ul li.product .caption {
-    visibility: visible; } }
+    visibility: visible; }
+
+  div.collection2 .products .products-ul li.product {
+    min-height: 350px;
+    width: 70%; } }
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
@@ -1466,7 +1475,7 @@ table {
     height: 100%;
     position: absolute;
     left: 0;
-    background: url(../assets/images/collection3_1.png) no-repeat center center;
+    background: url(../assets/images/collection3_1.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1496,7 +1505,7 @@ table {
       text-align: right;
       padding: 25px;
       top: 0;
-      background: url(../assets/images/collection3_3.png) no-repeat center center;
+      background: url(../assets/images/collection3_3.jpg) no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -1511,7 +1520,7 @@ table {
       padding: 25px;
       padding-bottom: 150px;
       top: 50%;
-      background: url(../assets/images/collection3_2.png) no-repeat center center;
+      background: url(../assets/images/collection3_2.jpg) no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -1602,10 +1611,13 @@ table {
       margin-bottom: 1em; }
     .mailing-list .form-container input {
       margin-bottom: 1em;
-      font-size: 14px; } }
+      font-size: 14px; }
+    .mailing-list .form-container button {
+      width: 140px; } }
 @media screen and (max-width: 767px) {
-  h2 {
-    font-size: 24px; } }
+  .skinny h2 {
+    font-size: 24px;
+    text-align: center; } }
 div.video {
   position: relative;
   display: flex;
@@ -1676,20 +1688,29 @@ div.video {
       display: inline-block;
       text-align: right; }
 
+@media screen and (max-width: 767px) {
+  .enla .enla-logo {
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 50px; }
+
+  .enla .bit-widget-container {
+    width: 90%; } }
 .news {
   background-color: black;
   min-height: 400px;
   position: relative;
   padding-bottom: 100px; }
+  .news h4 a {
+    font-size: 14px;
+    color: white !important;
+    font-family: "neutralreg", helvetica, sans-serif !important; }
   .news .view-all {
     position: absolute;
     top: 150px;
     right: 25px;
     font-size: 1.5em;
     font-family: "neutralreg", helvetica, sans-serif; }
-    .news .view-all a {
-      font-size: .7em;
-      color: #e2e2e2; }
     .news .view-all span {
       margin-left: 1em; }
   .news h3, .news h4 {
@@ -1704,10 +1725,11 @@ div.video {
   .news .caption {
     visibility: hidden;
     align-self: flex-end;
-    padding: 0 1em;
+    padding: 0 5%;
     position: absolute;
     z-index: 10;
-    bottom: 10%; }
+    bottom: 10%;
+    width: 80%; }
     .news .caption h4 {
       font-size: 16px; }
   .news .active .caption {
@@ -1745,6 +1767,24 @@ div.video {
       width: 50%;
       max-height: 300px;
       margin-bottom: 2em; } }
+@media screen and (max-width: 767px) {
+  .news {
+    padding-bottom: 50px; }
+
+  .news .news-items {
+    margin-top: 200px; }
+
+  .news .news-items .item {
+    width: 90%;
+    max-height: 300px;
+    margin-bottom: 2em; }
+
+  .news .news-nav .news-title {
+    margin-top: 100px; }
+
+  .news .view-all {
+    top: 100px;
+    font-family: "neutralreg", helvetica, sans-serif; } }
 footer {
   background-color: #F5F5F5;
   min-height: 400px; }

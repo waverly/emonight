@@ -4,16 +4,20 @@
   position: relative;
   padding-bottom: 100px;
 
+  h4{
+    a{
+      font-size: 14px;
+      color: white!important;
+      font-family: $font-family-p!important;
+    }
+  }
+
   .view-all{
     position: absolute;
     top: 150px;
     right: $margin-sides;
     font-size: 1.5em;
     font-family: $font-family-p;
-    a{
-      font-size: .7em;
-      color: $grey;
-    }
     span{
       margin-left: 1em;
     }
@@ -36,10 +40,11 @@
   .caption{
     visibility: hidden;
     align-self: flex-end;
-    padding: 0 1em;
+    padding: 0 5%;
     position: absolute;
     z-index: 10;
     bottom: 10%;
+    width: 80%;
     h4{
       font-size: 16px;
     }
@@ -97,5 +102,30 @@
         margin-bottom: 2em;
       }
     }
+  }
+}
+
+@media screen and (max-width: $break-phone-landscape){
+
+  .news{
+    padding-bottom: 50px;
+  }
+
+  .news .news-items{
+    margin-top: 200px;
+  }
+
+  .news .news-items .item {
+    width: 90%;
+    max-height: 300px;
+    margin-bottom: 2em;
+  }
+
+  .news .news-nav .news-title {
+      margin-top: 100px;
+  }
+  .news .view-all {
+    top: 100px;
+    font-family: $font-family-p;
   }
 }
