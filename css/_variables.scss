@@ -28,25 +28,29 @@ $font-size-p: 12px;
 $font-size-h1-mobile: 25px;
 $font-size-h2-mobile: 20px;
 $font-size-h3-mobile: 18px;
+$font-size-h4-mobile: 16px;
 $font-size-p-mobile: 12px;
 
 // ........................................................FONT FAMILIES
 $font-family-h1: 'neutralbold', helvetica, sans-serif;
 $font-family-h2: 'neutralbold', helvetica, sans-serif;
 $font-family-h3: 'neutralbold', helvetica, sans-serif;
+$font-family-h4: 'neutralbold', helvetica, sans-serif;
 $font-family-p: 'neutralreg', helvetica, sans-serif;
 
 
 
 // ........................................................FONT LINEHEIGHTS
-$line-height-h1: 50px;
-$line-height-h2: 36px;
-$line-height-h3: 30px;
+$line-height-h1: 110px;
+$line-height-h2: 65px;
+$line-height-h3: 45px;
+$line-height-h4: 30px;
 $line-height-p: 26px;
 
 $line-height-h1-mobile: 40px;
 $line-height-h2-mobile: 36px;
 $line-height-h3-mobile: 20px;
+$line-height-h4-mobile: 20px;
 $line-height-p-mobile: 17px;
 
 
@@ -54,6 +58,7 @@ $letter-spacing: 1px;
 $letter-spacing-h1: 2px;
 $letter-spacing-h2: 0px;
 $letter-spacing-h3: 1px;
+$letter-spacing-h4: 1px;
 $letter-spacing-paragraph:1px;
 
 
@@ -66,7 +71,7 @@ $red:#FF0000;
 $pink:#f7c0cd;
 $grey:#e2e2e2;
 $light-grey:#F5F5F5;
-
+$dark-grey: #585858;
 
 // ........................................................MARGINS
 $margin-sides: 25px;

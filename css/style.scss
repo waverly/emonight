@@ -4,11 +4,30 @@
 @import 'collection1';
 @import 'collection2';
 @import 'collection3';
-@import 'music-we-love';
-@import 'video1';
+@import 'skinny';
+@import 'videoblocks';
 @import 'enla';
+@import 'news';
+@import 'footer';
 
 .site-wrap{
   margin-top: $nav-height;
+  transition: 1s all;
+}
+
+.site-wrap.active{
+  transition: 1s all;
+  margin-top: 80px;
+}
+
+.parallax-mirror.active{
+  top: -70px!important;
+}
+
+@media screen and (max-width: 1180px){
+  .site-wrap{
+    transition: 1s all;
+    margin-top: 80px;
+  }
 
 }

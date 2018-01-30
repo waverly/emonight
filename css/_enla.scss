@@ -17,6 +17,25 @@
       width: 100%;
     }
   }
+
+  .bit-widget-container{
+    width: 80%;
+    .bit-nav-bar-container{
+      display: none;
+    }
+    .bit-widget .bit-event{
+      border-top: none;
+      border-bottom: 1px solid white;
+      padding: 30px 0;
+    }
+
+    .bit-widget .bit-button{
+      background-color: transparent;
+    }
+  }
+
+
+
   .dates{
     width: 80%;
   }

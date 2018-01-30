@@ -4,22 +4,141 @@
 
 .collection3{
   position: relative;
-  height: 130vh;
+  height: 120vh;
+
+  .caption{
+    font-size: $font-size-h3;
+    color: $grey;
+    font-family: $font-family-h4;
+    line-height: $line-height-h2;
+    width: 80%;
+    visibility: hidden;
+  }
+
+  .active{
+    .caption{
+      visibility: visible;
+    }
+  }
+
   .left{
     width: 50%;
+    height: 100%;
     position: absolute;
     left: 0;
+    background: url(../assets/images/collection3_1.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: $margin-sides;
+    padding-bottom: 50px;
+
+    .caption{
+      font-size: $font-size-h2;
+      line-height: 80px;
+    }
+
     img{
       width: 100%;
     }
   }
   .right{
     width: 50%;
+    height: 100%;
     right: 0;
     position: absolute;
-    img{
+
+    .top{
+      height: 50%;
       width: 100%;
+      position: absolute;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      text-align: right;
+      padding: $margin-sides;
+      // padding-bottom: $margin-top;
+      top: 0;
+      background: url(../assets/images/collection3_3.png) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .bottom{
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: $margin-sides;
+      padding-bottom: $margin-top;
+      top: 50%;
+      background: url(../assets/images/collection3_2.png) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
   }
+}
+
+@media screen and (max-width: $break-phone-landscape){
+
+    .collection3{
+
+      .caption{
+        visibility: visible;
+        h3{
+          a{
+            color: white;
+          }
+        }
+      }
+
+      .left{
+        width: 100%;
+        height: 60%;
+      }
+
+      .right{
+        width: 100%;
+        height: 40%;
+        right: 0;
+        top: 60%;
+        position: absolute;
+
+        .top{
+          height: 100%;
+          width: 50%;
+          left: 0;
+          top: 0;
+          position: absolute;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+          text-align: right;
+        }
+
+        .bottom{
+          height: 100%;
+          width: 50%;
+          left: 50%;
+          top: 0;
+          position: absolute;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          padding: 25px;
+          padding-bottom: 150px;
+        }
+      }
+    }
 
 }
