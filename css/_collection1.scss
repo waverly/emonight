@@ -13,10 +13,12 @@ div.collection1{
 
   h1{
     color: white;
-    text-decoration: underline;
     position: absolute;
     z-index: 8;
     width: 80%;
+    &:hover{
+      text-decoration: underline;
+    }
   }
   img{
     width: 100%;

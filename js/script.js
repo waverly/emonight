@@ -1,4 +1,7 @@
 window.onload = function(){
+
+  sliderAdjust();
+
   console.log(window.innerWidth);
   if (window.innerWidth > 1299){
     const para = document.querySelectorAll('.parallax-mirror');
@@ -26,24 +29,17 @@ window.onload = function(){
     });
   }
   else{
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      if (scroll > position) {
-        //console.log("scrolling downwards in else block");
-      } else {
-        // console.log("scrolling upwards");
-      }
-      position = scroll;
-    });
   }
 
   window.onresize = function(){
+
+    sliderAdjust();
+
+    // nav resize
     console.log('resized');
     if (window.innerWidth > 1299){
       const para = document.querySelectorAll('.parallax-mirror');
-
       var position = $(window).scrollTop(); // should start at 0
-
       $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll > position) {
@@ -65,6 +61,21 @@ window.onload = function(){
   }
 }
 
+
+const slider = document.querySelector('.carousel');
+function sliderAdjust(){
+  console.log('inside of slider adjust');
+  // if (window.innerWidth < 1001 ){
+  //   console.log('inside of small size');
+  //   slider.setAttribute('data-flickity', '{ "groupCells": 1 }');
+  // }
+  //
+  // else if (window.innerWidth > 1000 ){
+  //   console.log('inside of LG size');
+  //   slider.setAttribute('data-flickity', '{ "groupCells": 4 }');
+  // }
+}
+
 // minimize nav and body margin-top on scroll
 const nav = document.querySelector('nav');
 const body = document.querySelector('body');
@@ -73,7 +84,7 @@ const sitewrap = document.querySelector('.site-wrap');
 // shop item - caption on $hover
 const products = document.querySelectorAll('.product');
 products.forEach( (product) => {
-  product.onmouseover = function(){ product.classList.add("active"); }
+  product.onmouseover = function(){ product.classList.add("active"); console.log('moused over'); }
   product.onmouseout = function(){ product.classList.remove("active");}
 })
 
