@@ -504,6 +504,7 @@ $transition-slow: 1s;
   letter-spacing: $letter-spacing-h1;
   @include respond-to(phone){
     font-size: $font-size-h1-mobile;
+    line-height: $line-height-h1-mobile;
   }
 }
 @mixin h2(){

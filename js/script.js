@@ -1,79 +1,74 @@
-// window.onload = function(){
-//   const para = document.querySelectorAll('.parallax-mirror');
-//   window.addEventListener("scroll", navScroll);
-//
-//   function navScroll(){
-//     let scrollTop = window.pageYOffset;
-//     console.log(para)
-//
-//     if (scrollTop > 100){
-//       nav.classList.add("small");
-//       sitewrap.classList.add('active');
-//       para.forEach( (p) => {
-//         p.classList.add('active');
-//       } );
-//     }
-//
-//     else if(scrollTop < 100 && nav.classList.contains("small")){
-//       nav.classList.remove("small");
-//       sitewrap.classList.remove('active');
-//       para.forEach( (p) => {
-//         p.classList.remove('active');
-//       } );
-//     }
-//   }
-// }
+window.onload = function(){
+  console.log(window.innerWidth);
+  if (window.innerWidth > 1299){
+    const para = document.querySelectorAll('.parallax-mirror');
+
+    var position = $(window).scrollTop(); // should start at 0
+
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll > position) {
+        console.log("scrolling downwards");
+        nav.classList.add("small");
+        sitewrap.classList.add('active');
+        para.forEach( (p) => {
+          p.classList.add('active');
+        } );
+      } else {
+        console.log("scrolling upwards");
+        nav.classList.remove("small");
+        sitewrap.classList.remove('active');
+        para.forEach( (p) => {
+          p.classList.remove('active');
+        } );
+      }
+      position = scroll;
+    });
+  }
+  else{
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll > position) {
+        //console.log("scrolling downwards in else block");
+      } else {
+        // console.log("scrolling upwards");
+      }
+      position = scroll;
+    });
+  }
+
+  window.onresize = function(){
+    console.log('resized');
+    if (window.innerWidth > 1299){
+      const para = document.querySelectorAll('.parallax-mirror');
+
+      var position = $(window).scrollTop(); // should start at 0
+
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > position) {
+          console.log("scrolling downwards");
+          nav.classList.add("small");
+          sitewrap.classList.add('active');
+          para.forEach( (p) => {
+            p.classList.add('active');
+          } );
+        } else {
+
+        }
+        position = scroll;
+      });
+    }
+    else if (window.outerWidth < 1300){
+
+    }
+  }
+}
 
 // minimize nav and body margin-top on scroll
 const nav = document.querySelector('nav');
 const body = document.querySelector('body');
 const sitewrap = document.querySelector('.site-wrap');
-
-// Cache selectors
-var lastId,
-    topMenu = $("#top-menu"),
-    topMenuHeight = topMenu.outerHeight(),
-    // All list items
-    menuItems = topMenu.find("a"),
-    // Anchors corresponding to menu items
-    scrollItems = menuItems.map(function(){
-      var item = $($(this).attr("href"));
-      if (item.length) { return item; }
-    });
-
-// Bind click handler to menu items
-// so we can get a fancy scroll animation
-menuItems.click(function(e){
-  var href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top;
-  $('html, body').stop().animate({
-      scrollTop: offsetTop
-  }, 300);
-  e.preventDefault();
-});
-
-// Bind to scroll
-$(window).scroll(function(){
-   // Get container scroll position
-   var fromTop = $(this).scrollTop()+topMenuHeight;
-
-   // Get id of current scroll item
-   var cur = scrollItems.map(function(){
-     if ($(this).offset().top < fromTop)
-       return this;
-   });
-   // Get the id of the current element
-   cur = cur[cur.length-1];
-   var id = cur && cur.length ? cur[0].id : "";
-
-   if (lastId !== id) {
-       lastId = id;
-       // Set/remove active class
-       menuItems
-         .parent().removeClass("active")
-         .end().filter("[href='#"+id+"']").parent().addClass("active");
-   }
-});
 
 // shop item - caption on $hover
 const products = document.querySelectorAll('.product');
@@ -97,22 +92,6 @@ navLinks.forEach((navLink) => {
     nav.classList.toggle("expand");
   })
 })
-
-// news images - caption on $hover
-const newsItems = document.querySelectorAll('.news-items .item');
-
-newsItems.forEach((item)=>{
-  item.onmouseover = showCaption;
-  item.onmouseout = removeCaption;
-})
-
-function showCaption(){
-  this.classList.toggle('active');
-}
-
-function removeCaption(){
-  this.classList.toggle('active');
-}
 
 // collection 3
 const colItems = document.querySelectorAll('.col-item');

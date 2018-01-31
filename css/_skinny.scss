@@ -5,6 +5,8 @@
   align-items: center;
   h2{
     position: absolute;
+    max-width: 80%;
+    text-align: center;
   }
   img{
     width: 100vw;
@@ -12,11 +14,11 @@
 }
 
 .music-we-love{
-  min-height: 200px;
+  min-height: 300px;
 }
 
 .mailing-list{
-  min-height: 200px;
+  min-height: 300px;
 
   form{
     width: 80%;

@@ -11,20 +11,25 @@
 @import 'footer';
 
 .site-wrap{
-  margin-top: $nav-height;
+  margin-top: 100px;
   transition: 1s all;
 }
 
-.site-wrap.active{
-  transition: 1s all;
-  margin-top: 80px;
+// .parallax-mirror.active{
+//   top: -70px!important;
+// }
+
+.parallax-mirror{
+  img{
+    // width: 100vw!important;
+    // right: 0!important;
+    // left: 0!important;
+  }
 }
 
-.parallax-mirror.active{
-  top: -70px!important;
-}
 
-@media screen and (max-width: 1180px){
+
+@media screen and (max-width: 1300px){
   .site-wrap{
     transition: 1s all;
     margin-top: 80px;

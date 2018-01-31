@@ -201,7 +201,7 @@ p {
       line-height: 17px; } }
 
 h1 {
-  font-size: 90px;
+  font-size: 85px;
   line-height: 110px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 2px;
@@ -210,7 +210,8 @@ h1 {
     }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h1 {
-      font-size: 25px; } }
+      font-size: 25px;
+      line-height: 40px; } }
 
 h2 {
   font-size: 52px;
@@ -432,7 +433,7 @@ p {
       line-height: 17px; } }
 
 h1 {
-  font-size: 90px;
+  font-size: 85px;
   line-height: 110px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 2px;
@@ -441,7 +442,8 @@ h1 {
     }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h1 {
-      font-size: 25px; } }
+      font-size: 25px;
+      line-height: 40px; } }
 
 h2 {
   font-size: 52px;
@@ -512,7 +514,7 @@ table {
 /*$break-infinite: 500000px;*/
 /*....................................SCSS MIXINS..................................*/
 nav {
-  height: 150px;
+  height: 100px;
   width: 100vw;
   top: 0;
   z-index: 13;
@@ -520,7 +522,7 @@ nav {
   position: fixed;
   display: flex;
   align-items: center;
-  transition: 1s height; }
+  transition: margin-top 1s; }
   nav h4.active a {
     border-bottom: 1.5px solid black; }
   nav .logo {
@@ -528,7 +530,7 @@ nav {
     height: auto;
     width: 25%;
     justify-content: flex-start;
-    padding: 25px; }
+    margin-left: 10%; }
     nav .logo img {
       width: 175px; }
   nav .burger {
@@ -564,6 +566,9 @@ nav {
       font-size: 1em;
       font-family: "neutralbold", helvetica, sans-serif;
       font-weight: 600; }
+      nav .nav-ul h4 a:hover {
+        text-decoration: none;
+        border-bottom: 2px solid black; }
   nav .nav-ul li {
     display: inline-block; }
   nav .nav-items {
@@ -577,26 +582,31 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 25px; }
+    margin-right: 10%; }
     nav .nav-social .fa {
       font-size: 1.5em; }
     nav .nav-social .fa-2x {
       font-size: 1.3em; }
     nav .nav-social .social-ul li {
-      padding: 0 .5em; }
+      padding: 0 .5em;
+      padding-top: .4em; }
     nav .nav-social .cart-ul li {
       margin-left: 0em;
       font-size: 1.2em; }
       nav .nav-social .cart-ul li .fa-search {
-        margin-left: 1em; }
+        margin-left: .5em; }
       nav .nav-social .cart-ul li .fa-shopping-cart {
         margin-left: .2em; }
 
 nav.small {
-  transition: 1s height;
-  height: 80px; }
+  transition: margin-top 1s;
+  margin-top: -100px !important; }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1300px) {
+  nav.small {
+    background-color: white;
+    margin-top: 0 !important; }
+
   nav {
     transition: 0s height;
     height: 80px;
@@ -609,7 +619,9 @@ nav.small {
     nav .logo {
       position: fixed;
       left: 0;
-      top: 0; }
+      top: 0;
+      margin-left: 0;
+      padding: 25px; }
     nav .burger {
       display: block;
       position: fixed;
@@ -620,7 +632,9 @@ nav.small {
     nav .nav-social {
       width: 100vw;
       text-align: center;
-      margin-top: 2em; }
+      margin-top: 2em;
+      margin-right: 0;
+      padding: 25px; }
       nav .nav-social .fa {
         font-size: 1.8em; }
       nav .nav-social .fa-2x {
@@ -636,6 +650,9 @@ nav.small {
       nav .nav-items .nav-ul h4 a {
         font-size: 1.2em;
         line-height: 2em; }
+      nav .nav-items .nav-ul h4 a:hover {
+        text-decoration: none !important;
+        border-bottom: 3px solid black !important; }
 
   nav.expand {
     height: 100vh;
@@ -806,7 +823,7 @@ p {
       line-height: 17px; } }
 
 h1 {
-  font-size: 90px;
+  font-size: 85px;
   line-height: 110px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 2px;
@@ -815,7 +832,8 @@ h1 {
     }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h1 {
-      font-size: 25px; } }
+      font-size: 25px;
+      line-height: 40px; } }
 
 h2 {
   font-size: 52px;
@@ -897,10 +915,15 @@ div.collection1 {
     color: white;
     text-decoration: underline;
     position: absolute;
-    z-index: 8; }
+    z-index: 8;
+    width: 80%; }
   div.collection1 img {
     width: 100%; }
 
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+  div.collecgtion1 h1 {
+    line-height: 40px;
+    color: red; } }
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
@@ -1065,7 +1088,7 @@ p {
       line-height: 17px; } }
 
 h1 {
-  font-size: 90px;
+  font-size: 85px;
   line-height: 110px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 2px;
@@ -1074,7 +1097,8 @@ h1 {
     }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h1 {
-      font-size: 25px; } }
+      font-size: 25px;
+      line-height: 40px; } }
 
 h2 {
   font-size: 52px;
@@ -1148,15 +1172,15 @@ div.collection2 {
   position: relative;
   min-height: 500px;
   background-color: #e2e2e2;
-  padding: 100px 25px; }
+  padding: 100px 10%; }
   div.collection2 .featured {
     position: absolute;
     top: 50px;
-    left: 25px; }
+    left: 10%; }
   div.collection2 .view-all {
     position: absolute;
     top: 50px;
-    right: 25px;
+    right: 10%;
     font-size: 1.5em;
     font-family: "neutralreg", helvetica, sans-serif;
     display: flex; }
@@ -1167,7 +1191,8 @@ div.collection2 {
       margin-left: 1em; }
   div.collection2 .products {
     justify-content: space-between;
-    width: 100%;
+    width: 110%;
+    margin-left: -6%;
     margin-top: 100px; }
     div.collection2 .products li.product.active .caption {
       visibility: visible !important; }
@@ -1183,7 +1208,7 @@ div.collection2 {
         align-items: center;
         text-align: center; }
         div.collection2 .products .products-ul li.product img {
-          max-width: 100%;
+          max-width: 80%;
           max-height: 80%; }
         div.collection2 .products .products-ul li.product .caption {
           margin-top: 1em;
@@ -1192,19 +1217,22 @@ div.collection2 {
             font-size: 1.2em; }
 
 @media screen and (max-width: 1000px) {
-  div.collection2 .products .products-ul {
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-    div.collection2 .products .products-ul li.product {
-      min-height: 400px;
-      width: 50%;
+  div.collection2 .products {
+    width: 100%;
+    margin-left: 0; }
+    div.collection2 .products .products-ul {
+      min-height: 300px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center; } }
+      justify-content: space-between;
+      align-items: center; }
+      div.collection2 .products .products-ul li.product {
+        min-height: 400px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
 @media screen and (max-width: 767px) {
   div.collection2 .products {
     margin-top: 50px; }
@@ -1214,7 +1242,13 @@ div.collection2 {
 
   div.collection2 .products .products-ul li.product {
     min-height: 350px;
-    width: 70%; } }
+    width: 100%; }
+
+  div.collection2 .featured {
+    left: 5%; }
+
+  div.collection2 .view-all {
+    right: 5%; } }
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
@@ -1379,7 +1413,7 @@ p {
       line-height: 17px; } }
 
 h1 {
-  font-size: 90px;
+  font-size: 85px;
   line-height: 110px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 2px;
@@ -1388,7 +1422,8 @@ h1 {
     }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h1 {
-      font-size: 25px; } }
+      font-size: 25px;
+      line-height: 40px; } }
 
 h2 {
   font-size: 52px;
@@ -1567,15 +1602,17 @@ table {
   justify-content: center;
   align-items: center; }
   .skinny h2 {
-    position: absolute; }
+    position: absolute;
+    max-width: 80%;
+    text-align: center; }
   .skinny img {
     width: 100vw; }
 
 .music-we-love {
-  min-height: 200px; }
+  min-height: 300px; }
 
 .mailing-list {
-  min-height: 200px; }
+  min-height: 300px; }
   .mailing-list form {
     width: 80%; }
   .mailing-list .form-container {
@@ -1623,10 +1660,30 @@ div.video {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  max-height: 70vh;
   width: 100vw;
-  background-color: limegreen; }
+  overflow: hidden; }
 
+.float-logo {
+  z-index: 10;
+  position: absolute;
+  width: 200px;
+  height: auto; }
+  .float-logo img {
+    max-width: 100%;
+    max-height: 100%; }
+
+video {
+  width: 100vw;
+  max-height: 70%;
+  height: auto; }
+
+@media screen and (max-width: 767px) {
+  .float-logo {
+    width: 100px; }
+    .float-logo img {
+      max-width: 100%;
+      max-height: 100%; } }
 .enla {
   background: url(../assets/images/ENLA.png) no-repeat center center;
   -webkit-background-size: cover;
@@ -1638,8 +1695,9 @@ div.video {
   flex-direction: column;
   align-items: center; }
   .enla .enla-logo {
-    width: 50%;
-    margin: 150px 0; }
+    width: 80%;
+    margin-top: 150px;
+    margin-bottom: 100px; }
     .enla .enla-logo img {
       width: 100%; }
   .enla .bit-widget-container {
@@ -1708,7 +1766,7 @@ div.video {
   .news .view-all {
     position: absolute;
     top: 150px;
-    right: 25px;
+    right: 10%;
     font-size: 1.5em;
     font-family: "neutralreg", helvetica, sans-serif; }
     .news .view-all span {
@@ -1721,9 +1779,8 @@ div.video {
     .news .news-nav .news-title {
       position: absolute;
       margin-top: 150px;
-      margin-left: 25px; }
+      margin-left: 10%; }
   .news .caption {
-    visibility: hidden;
     align-self: flex-end;
     padding: 0 5%;
     position: absolute;
@@ -1732,18 +1789,18 @@ div.video {
     width: 80%; }
     .news .caption h4 {
       font-size: 16px; }
-  .news .active .caption {
-    visibility: visible; }
   .news .news-items {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin-top: 250px;
-    padding: 25px; }
+    width: 80%;
+    margin-left: 10%;
+    padding: auto;
+    padding-top: 250px; }
     .news .news-items .item {
       width: 30%;
       max-height: 250px;
-      position: relative; }
+      position: relative;
+      display: initial; }
       .news .news-items .item img {
         max-width: 100%;
         max-height: 100%;
@@ -1772,18 +1829,23 @@ div.video {
     padding-bottom: 50px; }
 
   .news .news-items {
-    margin-top: 200px; }
+    padding: 25px 0;
+    padding-top: 200px;
+    width: 90%;
+    margin-left: 5%; }
 
   .news .news-items .item {
-    width: 90%;
+    width: 100%;
     max-height: 300px;
     margin-bottom: 2em; }
 
   .news .news-nav .news-title {
-    margin-top: 100px; }
+    margin-top: 100px;
+    margin-left: 5%; }
 
   .news .view-all {
     top: 100px;
+    right: 5%;
     font-family: "neutralreg", helvetica, sans-serif; } }
 footer {
   background-color: #F5F5F5;
@@ -1827,6 +1889,7 @@ footer {
         font-size: 1.5em; }
     footer .footer-wrap .col-lg {
       width: 30%;
+      text-align: right;
       height: 300px; }
       footer .footer-wrap .col-lg header {
         font-weight: 600;
@@ -1866,19 +1929,13 @@ footer {
       margin-left: 0; }
     footer .footer-wrap .col-lg {
       width: 50%;
-      height: auto; } }
+      height: auto;
+      text-align: left; } }
 .site-wrap {
-  margin-top: 150px;
+  margin-top: 100px;
   transition: 1s all; }
 
-.site-wrap.active {
-  transition: 1s all;
-  margin-top: 80px; }
-
-.parallax-mirror.active {
-  top: -70px !important; }
-
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1300px) {
   .site-wrap {
     transition: 1s all;
     margin-top: 80px; } }
