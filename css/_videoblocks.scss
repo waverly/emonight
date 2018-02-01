@@ -8,6 +8,12 @@ div.video{
   overflow: hidden;
 }
 
+.video.first{
+  .float-logo{
+    width: 200px;
+  }
+}
+
 .float-logo{
   z-index: 10;
   position: absolute;

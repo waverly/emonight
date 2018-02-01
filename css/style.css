@@ -145,7 +145,7 @@ h3 a {
 
 h4 a {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
@@ -238,7 +238,7 @@ h3 {
 
 h4 {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
@@ -374,7 +374,7 @@ h3 a {
 
 h4 a {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
@@ -467,7 +467,7 @@ h3 {
 
 h4 {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
@@ -761,7 +761,7 @@ h3 a {
 
 h4 a {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
@@ -854,7 +854,7 @@ h3 {
 
 h4 {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
@@ -1024,7 +1024,7 @@ h3 a {
 
 h4 a {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
@@ -1117,7 +1117,7 @@ h3 {
 
 h4 {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
@@ -1364,7 +1364,7 @@ h3 a {
 
 h4 a {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
@@ -1457,7 +1457,7 @@ h3 {
 
 h4 {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
@@ -1694,6 +1694,9 @@ div.video {
   max-height: 70vh;
   width: 100vw;
   overflow: hidden; }
+
+.video.first .float-logo {
+  width: 200px; }
 
 .float-logo {
   z-index: 10;
