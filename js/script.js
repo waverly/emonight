@@ -1,48 +1,59 @@
+// Feb 3, 2018
+
 window.onload = function(){
-
-  console.log('window has loaded');
-
-  // minimize nav and body margin-top on scroll
+  // minimize nav, add body/parallax margin-top on scroll
   const nav = document.querySelector('nav');
   const body = document.querySelector('body');
   const sitewrap = document.querySelector('.site-wrap');
 
-  sliderAdjust();
 
-  console.log(window.innerWidth);
   if (window.innerWidth > 1299){
     const para = document.querySelectorAll('.parallax-mirror');
-
     var position = $(window).scrollTop(); // should start at 0
     var lastScrollTop = 0;
-    $(window).scroll(function(event){
-       var st = $(this).scrollTop();
-       if (st > lastScrollTop ){
-         console.log("scrolling downwards - nav should have small class");
-         nav.classList.add("small");
-         if (sitewrap){
-           sitewrap.classList.add('active');
-         }
-         para.forEach( (p) => {
-           p.classList.add('active');
-         } );
-       } else {
-         console.log('scrolling upwards - nav should not have small class');
-         nav.classList.remove("small");
-         if (sitewrap){
-           sitewrap.classList.remove('active');
-         }
-         para.forEach( (p) => {
-           p.classList.remove('active');
-         } );
-       }
-       lastScrollTop = st;
+    // element to detect scroll direction of
+    var el = $(window),
+
+    // initialize last scroll position
+    lastY = el.scrollTop();
+
+    el.on('scroll', function() {
+        // get current scroll position
+        var currY = el.scrollTop(),
+        // determine current scroll direction
+        y = (currY > lastY) ? 'down' : ((currY === lastY) ? 'none' : 'up');
+
+        console.log(currY, lastY, y);
+
+        if (y === 'down'){
+          if (currY > 10){
+          console.log('nav should have small class');
+            nav.classList.add("small");
+            if (sitewrap){
+              sitewrap.classList.add('active');
+            }
+            para.forEach( (p) => {
+              p.classList.add('active');
+            } );
+          }
+        }
+        else if (y === 'up'){
+          if (currY > 10){
+            console.log('scrolling upwards - nav should not have small class');
+            nav.classList.remove("small");
+            if (sitewrap){
+              sitewrap.classList.remove('active');
+            }
+            para.forEach( (p) => {
+              p.classList.remove('active');
+            } );
+          }
+        }
+        lastY = currY;
     });
   }
 
   window.onresize = function(){
-
-    sliderAdjust();
 
     // nav resize
     if (window.innerWidth > 1299){
@@ -68,21 +79,6 @@ window.onload = function(){
 
     }
   }
-}
-
-
-const slider = document.querySelector('.carousel');
-function sliderAdjust(){
-  console.log('inside of slider adjust');
-  // if (window.innerWidth < 1001 ){
-  //   console.log('inside of small size');
-  //   slider.setAttribute('data-flickity', '{ "groupCells": 1 }');
-  // }
-  //
-  // else if (window.innerWidth > 1000 ){
-  //   console.log('inside of LG size');
-  //   slider.setAttribute('data-flickity', '{ "groupCells": 4 }');
-  // }
 }
 
 

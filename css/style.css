@@ -1899,19 +1899,29 @@ table {
 /*$break-large-desktop: 2500px;*/
 /*$break-infinite: 500000px;*/
 /*....................................SCSS MIXINS..................................*/
+.collection-pg-wrap .collection1 {
+  height: 65vh;
+  background: url(../assets/images/collection1.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .collection-pg-wrap .collection1 h1:hover {
+    text-decoration: none; }
+
 .collection-page {
   min-height: 100vh;
   position: relative;
   background-color: white;
   width: 100%;
-  padding: 5%; }
+  padding: 10%; }
   .collection-page .heading-wrap {
     position: absolute;
     top: 5%;
     left: 0;
     width: 100%;
     height: 100px;
-    padding: 0 5%;
+    padding: 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -1944,7 +1954,7 @@ table {
       width: 50%; }
     .collection-page .flex-wrap .col-2 {
       width: 50%;
-      margin-top: 8em; }
+      margin-top: 25em; }
     .collection-page .flex-wrap .item {
       width: 100%;
       min-height: 600px;
@@ -1960,6 +1970,8 @@ table {
         margin-top: 5%;
         max-height: 15%;
         text-align: center; }
+        .collection-page .flex-wrap .item .caption h4 {
+          line-height: 30px; }
 
 @media screen and (max-width: 1000px) {
   .collection-page .flex-wrap {
@@ -1978,6 +1990,7 @@ table {
     text-align: center; }
     .collection-page .heading-wrap .section-title {
       align-self: left;
+      justify-content: center;
       max-width: 100%;
       width: 100%;
       line-height: 60px; }
@@ -2193,7 +2206,8 @@ html {
   height: auto;
   max-width: 100vw;
   background-color: white;
-  padding: 0 5%;
+  padding: 0 10%;
+  padding-right: 0;
   padding-bottom: 5%; }
   .single .left {
     position: absolute;
@@ -2276,6 +2290,9 @@ html {
       width: 100%; }
 
 @media screen and (max-width: 1000px) {
+  .single {
+    padding: 0 5%; }
+
   .single .left .title h3 {
     line-height: 30px; }
 
@@ -2574,6 +2591,11 @@ footer {
       width: 50%;
       height: auto;
       text-align: left; } }
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
+
 .site-wrap {
   margin-top: 100px;
   transition: 1s all; }
