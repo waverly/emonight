@@ -1,5 +1,12 @@
 window.onload = function(){
 
+  console.log('window has loaded');
+
+  // minimize nav and body margin-top on scroll
+  const nav = document.querySelector('nav');
+  const body = document.querySelector('body');
+  const sitewrap = document.querySelector('.site-wrap');
+
   sliderAdjust();
 
   console.log(window.innerWidth);
@@ -7,28 +14,30 @@ window.onload = function(){
     const para = document.querySelectorAll('.parallax-mirror');
 
     var position = $(window).scrollTop(); // should start at 0
-
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      if (scroll > position) {
-        console.log("scrolling downwards");
-        nav.classList.add("small");
-        sitewrap.classList.add('active');
-        para.forEach( (p) => {
-          p.classList.add('active');
-        } );
-      } else {
-        console.log("scrolling upwards");
-        nav.classList.remove("small");
-        sitewrap.classList.remove('active');
-        para.forEach( (p) => {
-          p.classList.remove('active');
-        } );
-      }
-      position = scroll;
+    var lastScrollTop = 0;
+    $(window).scroll(function(event){
+       var st = $(this).scrollTop();
+       if (st > lastScrollTop ){
+         console.log("scrolling downwards - nav should have small class");
+         nav.classList.add("small");
+         if (sitewrap){
+           sitewrap.classList.add('active');
+         }
+         para.forEach( (p) => {
+           p.classList.add('active');
+         } );
+       } else {
+         console.log('scrolling upwards - nav should not have small class');
+         nav.classList.remove("small");
+         if (sitewrap){
+           sitewrap.classList.remove('active');
+         }
+         para.forEach( (p) => {
+           p.classList.remove('active');
+         } );
+       }
+       lastScrollTop = st;
     });
-  }
-  else{
   }
 
   window.onresize = function(){
@@ -36,16 +45,16 @@ window.onload = function(){
     sliderAdjust();
 
     // nav resize
-    console.log('resized');
     if (window.innerWidth > 1299){
       const para = document.querySelectorAll('.parallax-mirror');
       var position = $(window).scrollTop(); // should start at 0
       $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll > position) {
-          console.log("scrolling downwards");
           nav.classList.add("small");
-          sitewrap.classList.add('active');
+          if (sitewrap){
+            sitewrap.classList.add('active');
+          }
           para.forEach( (p) => {
             p.classList.add('active');
           } );
@@ -76,10 +85,6 @@ function sliderAdjust(){
   // }
 }
 
-// minimize nav and body margin-top on scroll
-const nav = document.querySelector('nav');
-const body = document.querySelector('body');
-const sitewrap = document.querySelector('.site-wrap');
 
 // shop item - caption on $hover
 const products = document.querySelectorAll('.product');

@@ -514,8 +514,14 @@ nav {
   z-index: 13;
   background-color: white;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: margin-top 1s;
+  -o-transition: margin-top 1s;
   transition: margin-top 1s; }
   nav h4.active a {
     border-bottom: 1.5px solid black; }
@@ -523,16 +529,24 @@ nav {
     width: 150px;
     height: auto;
     width: 25%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     margin-left: 10%; }
     nav .logo img {
       width: 175px; }
   nav .burger {
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     padding: 25px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     display: none; }
   nav burger div {
@@ -544,14 +558,12 @@ nav {
   nav burger.active div:nth-child(1) {
     top: 5px;
     -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg); }
   nav burger.active div:nth-child(2) {
     top: -6px;
     -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
   nav .nav-ul h4 {
     font-size: 1.2em;
@@ -567,14 +579,24 @@ nav {
     display: inline-block; }
   nav .nav-items {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center; }
     nav .nav-items li {
       padding: 0em 1em; }
   nav .nav-social {
     width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-right: 10%; }
     nav .nav-social .fa {
@@ -593,6 +615,8 @@ nav {
         margin-left: .2em; }
 
 nav.small {
+  -webkit-transition: margin-top 1s;
+  -o-transition: margin-top 1s;
   transition: margin-top 1s;
   margin-top: -100px !important; }
 
@@ -602,9 +626,16 @@ nav.small {
     margin-top: 0 !important; }
 
   nav {
+    -webkit-transition: 0s height;
+    -o-transition: 0s height;
     transition: 0s height;
     height: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: transparent;
     background: white; }
@@ -1627,6 +1658,475 @@ table {
       justify-content: center;
       padding: 25px;
       padding-bottom: 150px; } }
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*.................................................................................*/
+/*$break-large-desktop: 2500px;*/
+/*$break-infinite: 500000px;*/
+/*....................................SCSS MIXINS..................................*/
+/*....................................General settings..................................*/
+/*.....................TEXT MARK STYLES......................*/
+::-moz-selection {
+  background: transparent;
+  text-shadow: none; }
+
+::selection {
+  background: transparent;
+  text-shadow: none; }
+
+/*.....................ACTIVE CLASSES......................*/
+.blacked_text {
+  color: #FFFFFF; }
+
+.blacked_path {
+  fill: #FFFFFF; }
+
+.blacked_background {
+  background-color: #000000; }
+
+/*....................HIDING SCROLLBAR.....................*/
+::-webkit-scrollbar {
+  display: none; }
+
+* {
+  -webkit-overflow-scrolling: touch; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  outline: 0; }
+
+/*.....................GENERAL STYLES......................*/
+html {
+  font-family: helvetica;
+  width: 100%;
+  margin: 0, 0;
+  padding: 0, 0;
+  box-sizing: border-box;
+  background-color: transparent; }
+
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0, 0;
+  padding: 0, 0;
+  display: block;
+  position: relative;
+  background: #FFFFFF; }
+
+p, a, li {
+  font-size: 12px;
+  list-style-type: none;
+  letter-spacing: 1px;
+  color: #000000; }
+
+input, textarea, select, a, li {
+  text-decoration: none; }
+
+a {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    a {
+      font-size: 12px;
+      line-height: 17px; } }
+
+h3 a {
+  font-size: 36px;
+  line-height: 45px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/
+  color: #e2e2e2; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h3 a {
+      font-size: 18px;
+      line-height: 20px; } }
+
+h4 a {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h4 a {
+      font-size: 16px;
+      line-height: 20px; } }
+
+.a-hover {
+  color: #000000;
+  transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease; }
+  .a-hover:hover {
+    color: #F5F5F5;
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/
+    /*  @if $media == large-desktop {
+        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+      }*/ }
+    @media only screen and (min-width: 0px) and (max-device-width: 767px) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: portrait) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: landscape) {
+      .a-hover:hover {
+        color: #000000 !important; } }
+
+p {
+  font-size: 12px;
+  line-height: 26px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    p {
+      font-size: 12px;
+      line-height: 17px; } }
+
+h1 {
+  font-size: 85px;
+  line-height: 110px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 2px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h1 {
+      font-size: 25px;
+      line-height: 40px; } }
+
+h2 {
+  font-size: 52px;
+  line-height: 65px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 0px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h2 {
+      font-size: 20px;
+      line-height: 36px; } }
+
+h3 {
+  font-size: 36px;
+  line-height: 45px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h3 {
+      font-size: 18px;
+      line-height: 20px; } }
+
+h4 {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "neutralbold", helvetica, sans-serif;
+  letter-spacing: 1px;
+  /*  @if $media == large-desktop {
+      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+    }*/ }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h4 {
+      font-size: 16px;
+      line-height: 20px; } }
+
+.pop {
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  z-index: 14;
+  border-top: 1px solid black;
+  background: rgba(255, 255, 255, 0.2); }
+
+/*.........................MAIN............................*/
+table {
+  width: 100vw;
+  height: 100vh; }
+  table tr td {
+    vertical-align: middle; }
+
+/*....................................SCSS VARIABLES..................................*/
+@font-face {
+  font-family: neutralbold;
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: neutralreg;
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+/*....................................................................................*/
+/*.................................................................................*/
+/*$break-large-desktop: 2500px;*/
+/*$break-infinite: 500000px;*/
+/*....................................SCSS MIXINS..................................*/
+.collection-page {
+  min-height: 100vh;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  padding: 5%; }
+  .collection-page .heading-wrap {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .collection-page .heading-wrap .section-title {
+      align-self: left;
+      max-width: 70%;
+      height: 100%;
+      line-height: 100%;
+      display: flex;
+      align-items: center; }
+    .collection-page .heading-wrap .filter {
+      max-width: 30%;
+      align-self: right;
+      width: 15em;
+      height: 4em;
+      line-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .collection-page .heading-wrap .filter p {
+        margin-right: 3em;
+        font-family: "neutralbold", helvetica, sans-serif;
+        color: #585858; }
+  .collection-page .flex-wrap {
+    display: flex;
+    width: 100%;
+    margin-top: 150px;
+    flex-wrap: wrap; }
+    .collection-page .flex-wrap .col-1 {
+      width: 50%; }
+    .collection-page .flex-wrap .col-2 {
+      width: 50%;
+      margin-top: 8em; }
+    .collection-page .flex-wrap .item {
+      width: 100%;
+      min-height: 600px;
+      margin-top: 3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .collection-page .flex-wrap .item img {
+        max-width: 100%;
+        max-height: 80%; }
+      .collection-page .flex-wrap .item .caption {
+        margin-top: 5%;
+        max-height: 15%;
+        text-align: center; }
+
+@media screen and (max-width: 1000px) {
+  .collection-page .flex-wrap {
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 50px; }
+    .collection-page .flex-wrap .col-1 {
+      width: 100%; }
+    .collection-page .flex-wrap .col-2 {
+      width: 100%;
+      margin-top: 0; }
+    .collection-page .flex-wrap .item {
+      min-height: 400px; }
+  .collection-page .heading-wrap {
+    flex-direction: column;
+    text-align: center; }
+    .collection-page .heading-wrap .section-title {
+      align-self: left;
+      max-width: 100%;
+      width: 100%;
+      line-height: 60px; }
+    .collection-page .heading-wrap .filter {
+      max-width: 100%;
+      align-self: auto; } }
+[include*="form-input-select()"] {
+  display: block;
+  padding: 0;
+  position: relative;
+  /* Set options to normal weight */
+  /* ------------------------------------  */
+  /* START OF UGLY BROWSER-SPECIFIC HACKS */
+  /* ----------------------------------  */
+  /* FIREFOX won't let us hide the native select arrow, so we have to make it wider than needed and clip it via overflow on the parent container.
+     The percentage width is a fallback since FF 4+ supports calc() so we can just add a fixed amount of extra width to push the native arrow out of view. We're applying this hack across all FF versions because all the previous hacks were too fragile and complex.
+     You might want to consider not using this hack and using the native select arrow in FF. Note this makes the menus wider than the select button because they display at the specified width and aren't clipped. Targeting hack via http://browserhacks.com/#hack-758bff81c5c32351b02e10480b5ed48e */
+  /* Show only the native arrow */
+  color: black;
+  display: block;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 16px;
+  font-family: "neutralreg", helvetica, sans-serif;
+  width: 100%; }
+
+[include*="form-input-select()"]::before, [include*="form-input-select()"]::after {
+  content: '';
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  z-index: 2; }
+
+[include*="form-input-select()"] select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  border: 1px solid transparent;
+  font-size: 16px;
+  outline: none;
+  /* Focus style */ }
+
+[include*="form-input-select()"] select:focus {
+  background-color: transparent;
+  outline: none; }
+
+[include*="form-input-select()"] option {
+  font-weight: normal; }
+
+[include*="form-input-select()"] x:-o-prefocus, [include*="form-input-select()"]::after {
+  display: none; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  [include*="form-input-select()"] select::-ms-expand {
+    display: none; }
+
+  [include*="form-input-select()"] select:focus::-ms-value {
+    background: transparent;
+    color: #000; } }
+@-moz-document url-prefix() {
+  [include*="form-input-select()"] {
+    overflow: hidden; }
+
+  [include*="form-input-select()"] select {
+    width: 120%;
+    width: calc(100% + 3em);
+    /* Firefox focus has odd artifacts around the text, this kills that. See https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-focusring */ }
+
+  @supports (-moz-appearance: none) {
+    [include*="form-input-select()"] select {
+      width: 100%; } }
+  [include*="form-input-select()"] select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000; } }
+@supports (-moz-appearance: none) {
+  [include*="form-input-select()"] {
+    width: 100%; } }
+[include*="form-input-select()"]::before, [include*="form-input-select()"]::after {
+  content: '';
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  border: 1px solid transparent;
+  width: 0;
+  height: 0;
+  right: 16px; }
+
+[include*="form-input-select()"]::after {
+  border-width: 8px 6.5px 0 6.5px;
+  border-top-color: #e2e2e2;
+  top: 45%; }
+
+@-moz-document url-prefix() {
+  [include*="form-input-select()"] {
+    border-right: 3px solid black; }
+
+  [include*="form-input-select()"]:hover {
+    border-right: 3px solid #black; } }
+[include*="form-input-select()"]:hover select {
+  -webkit-box-shadow: 0 2px 3px rgba(0, 91, 166, 0.1) inset;
+  box-shadow: 0 2px 3px rgba(0, 91, 166, 0.1) inset;
+  border-color: black; }
+
+[include*="form-input-select()"]:hover select:focus {
+  outline-color: transparent; }
+
+[include*="form-input-select()"]:hover::before {
+  border-bottom-color: black; }
+
+[include*="form-input-select()"]:hover::after {
+  border-top-color: black; }
+
+[include*="form-input-select()"] select {
+  border: 3px solid #e2e2e2;
+  border-radius: 0;
+  font-weight: 400;
+  font-family: "neutralbold", helvetica, sans-serif;
+  color: #585858;
+  padding: 9px 14px;
+  line-height: 12px;
+  font-size: 12px;
+  -webkit-transition: border-color 0.2s ease, outline 0.2s ease;
+  transition: border-color 0.2s ease, outline 0.2s ease; }
+
+[include*="form-input-select()"] select:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+[include*="form-input-select()"] select[disabled], [include*="form-input-select()"] select:disabled {
+  opacity: 0.4;
+  cursor: not-allowed; }
+
+[include*="form-input-select()"] select:invalid {
+  color: #C7C7C7; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
 .skinny {
   position: relative;
   display: flex;
@@ -1686,6 +2186,114 @@ table {
   .skinny h2 {
     font-size: 24px;
     text-align: center; } }
+.single {
+  margin-top: 150px;
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  max-width: 100vw;
+  background-color: white;
+  padding: 0 5%;
+  padding-bottom: 5%; }
+  .single .left {
+    position: absolute;
+    position: sticky;
+    top: 150px;
+    left: 5%;
+    padding-bottom: 150px;
+    width: 55%;
+    z-index: 10; }
+    .single .left .title h3 {
+      line-height: 50px; }
+    .single .left .title .price {
+      font-family: "neutralreg", helvetica, sans-serif;
+      font-size: 20px; }
+    .single .left .size {
+      display: flex;
+      flex-direction: column; }
+      .single .left .size .size-dropdown {
+        width: 50%; }
+      .single .left .size p {
+        margin-right: 3em;
+        font-family: "neutralreg", helvetica, sans-serif;
+        color: #585858; }
+    .single .left .quantity, .single .left .size, .single .left .description, .single .left .add-to-cart {
+      margin-top: 1em; }
+    .single .left button {
+      height: 50px;
+      width: 175px;
+      background-color: black;
+      border-color: black;
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1px; }
+    .single .left .plus-minus-input {
+      align-items: center;
+      display: flex;
+      /* For Firefox */
+      /* Webkit browsers like Safari and Chrome */ }
+      .single .left .plus-minus-input button {
+        background-color: transparent;
+        border: 2px solid #e2e2e2;
+        color: black;
+        width: 36px;
+        height: 36px;
+        font-size: 12px; }
+        .single .left .plus-minus-input button .fa {
+          color: #585858; }
+      .single .left .plus-minus-input input[type='number'] {
+        -moz-appearance: textfield; }
+      .single .left .plus-minus-input input[type=number]::-webkit-inner-spin-button,
+      .single .left .plus-minus-input input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
+      .single .left .plus-minus-input .input-group-field {
+        text-align: center;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        height: 36px;
+        width: 36px;
+        border: 2px solid #e2e2e2;
+        border-left: 0px transparent;
+        border-right: 0px transparent;
+        font-family: "neutralbold", helvetica, sans-serif;
+        color: #585858; }
+        .single .left .plus-minus-input .input-group-field::-webkit-inner-spin-button,
+        .single .left .plus-minus-input .input-group-field ::-webkit-outer-spin-button {
+          appearance: none; }
+      .single .left .plus-minus-input .input-group-button .circle {
+        padding: 0em 0em; }
+    .single .left .add-to-cart {
+      margin-top: 2em; }
+  .single .right {
+    width: 50%;
+    margin-left: auto;
+    margin-top: -90vh;
+    right: 0;
+    top: 150px; }
+    .single .right img {
+      width: 100%; }
+
+@media screen and (max-width: 1000px) {
+  .single .left .title h3 {
+    line-height: 30px; }
+
+  .single .left {
+    position: absolute;
+    position: relative;
+    top: 0px;
+    left: 0;
+    padding-bottom: 50px;
+    width: 100%;
+    z-index: 10; }
+
+  .single .right {
+    width: 100%;
+    margin-left: auto;
+    margin-top: 0;
+    right: 0;
+    /* top: 50px; */ } }
 div.video {
   position: relative;
   display: flex;
@@ -1719,11 +2327,9 @@ video {
       max-width: 100%;
       max-height: 100%; } }
 .enla {
-  background: url(../assets/images/emonite.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(../assets/images/emonite.jpg) no-repeat center top;
+  background-size: 100% auto;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -1,10 +1,12 @@
 .enla{
-  background: url(../assets/images/emonite.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(../assets/images/emonite.jpg) no-repeat center top;
+  background-size: 100% auto;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
 
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
