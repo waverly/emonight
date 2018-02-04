@@ -49,9 +49,11 @@ table {
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*.................................................................................*/
 /*$break-large-desktop: 2500px;*/
@@ -122,8 +124,8 @@ a {
   font-family: "neutralreg", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     a {
       font-size: 12px;
@@ -135,8 +137,8 @@ h3 a {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
   color: #e2e2e2; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h3 a {
@@ -149,8 +151,8 @@ h4 a {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h4 a {
       font-size: 16px;
@@ -166,14 +168,14 @@ h4 a {
   .a-hover:hover {
     color: #F5F5F5;
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
     @media only screen and (min-width: 0px) and (max-device-width: 767px) {
       .a-hover:hover {
         color: #000000 !important; } }
@@ -190,8 +192,8 @@ p {
   font-family: "neutralreg", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     p {
       font-size: 12px;
@@ -203,8 +205,8 @@ h1 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 2px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h1 {
       font-size: 25px;
@@ -216,8 +218,8 @@ h2 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 0px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h2 {
       font-size: 20px;
@@ -229,8 +231,8 @@ h3 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h3 {
       font-size: 18px;
@@ -242,8 +244,8 @@ h4 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h4 {
       font-size: 16px;
@@ -270,17 +272,21 @@ table {
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*.................................................................................*/
 /*$break-large-desktop: 2500px;*/
@@ -351,8 +357,8 @@ a {
   font-family: "neutralreg", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     a {
       font-size: 12px;
@@ -364,8 +370,8 @@ h3 a {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
   color: #e2e2e2; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h3 a {
@@ -378,8 +384,8 @@ h4 a {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h4 a {
       font-size: 16px;
@@ -395,14 +401,14 @@ h4 a {
   .a-hover:hover {
     color: #F5F5F5;
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
     @media only screen and (min-width: 0px) and (max-device-width: 767px) {
       .a-hover:hover {
         color: #000000 !important; } }
@@ -419,8 +425,8 @@ p {
   font-family: "neutralreg", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     p {
       font-size: 12px;
@@ -432,8 +438,8 @@ h1 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 2px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h1 {
       font-size: 25px;
@@ -445,8 +451,8 @@ h2 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 0px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h2 {
       font-size: 20px;
@@ -458,8 +464,8 @@ h3 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h3 {
       font-size: 18px;
@@ -471,8 +477,8 @@ h4 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h4 {
       font-size: 16px;
@@ -499,9 +505,11 @@ table {
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*.................................................................................*/
 /*$break-large-desktop: 2500px;*/
@@ -604,7 +612,7 @@ nav {
     nav .nav-social .fa-2x {
       font-size: 1.3em; }
     nav .nav-social .social-ul li {
-      padding: 0 .5em;
+      padding: 0 0.5em;
       padding-top: .4em; }
     nav .nav-social .cart-ul li {
       margin-left: 0em;
@@ -624,7 +632,6 @@ nav.small {
   nav.small {
     background-color: white;
     margin-top: 0 !important; }
-
   nav {
     -webkit-transition: 0s height;
     -o-transition: 0s height;
@@ -678,27 +685,31 @@ nav.small {
       nav .nav-items .nav-ul h4 a:hover {
         text-decoration: none !important;
         border-bottom: 3px solid black !important; }
-
   nav.expand {
     height: 100vh;
     background: white; }
     nav.expand .nav-social, nav.expand .nav-items {
       display: block; } }
+
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*.................................................................................*/
 /*$break-large-desktop: 2500px;*/
@@ -769,8 +780,8 @@ a {
   font-family: "neutralreg", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     a {
       font-size: 12px;
@@ -782,8 +793,8 @@ h3 a {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
   color: #e2e2e2; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h3 a {
@@ -796,8 +807,8 @@ h4 a {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h4 a {
       font-size: 16px;
@@ -813,14 +824,14 @@ h4 a {
   .a-hover:hover {
     color: #F5F5F5;
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
     @media only screen and (min-width: 0px) and (max-device-width: 767px) {
       .a-hover:hover {
         color: #000000 !important; } }
@@ -837,8 +848,8 @@ p {
   font-family: "neutralreg", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     p {
       font-size: 12px;
@@ -850,8 +861,8 @@ h1 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 2px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h1 {
       font-size: 25px;
@@ -863,8 +874,8 @@ h2 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 0px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h2 {
       font-size: 20px;
@@ -876,8 +887,8 @@ h3 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h3 {
       font-size: 18px;
@@ -889,8 +900,8 @@ h4 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h4 {
       font-size: 16px;
@@ -917,9 +928,11 @@ table {
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*.................................................................................*/
 /*$break-large-desktop: 2500px;*/
@@ -947,21 +960,26 @@ div.collection1 {
   div.collecgtion1 h1 {
     line-height: 40px;
     color: red; } }
+
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*.................................................................................*/
 /*$break-large-desktop: 2500px;*/
@@ -1032,8 +1050,8 @@ a {
   font-family: "neutralreg", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     a {
       font-size: 12px;
@@ -1045,8 +1063,8 @@ h3 a {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
   color: #e2e2e2; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h3 a {
@@ -1059,8 +1077,8 @@ h4 a {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h4 a {
       font-size: 16px;
@@ -1076,14 +1094,14 @@ h4 a {
   .a-hover:hover {
     color: #F5F5F5;
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
     @media only screen and (min-width: 0px) and (max-device-width: 767px) {
       .a-hover:hover {
         color: #000000 !important; } }
@@ -1100,8 +1118,8 @@ p {
   font-family: "neutralreg", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     p {
       font-size: 12px;
@@ -1113,8 +1131,8 @@ h1 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 2px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h1 {
       font-size: 25px;
@@ -1126,8 +1144,8 @@ h2 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 0px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h2 {
       font-size: 20px;
@@ -1139,8 +1157,8 @@ h3 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h3 {
       font-size: 18px;
@@ -1152,8 +1170,8 @@ h4 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h4 {
       font-size: 16px;
@@ -1180,9 +1198,11 @@ table {
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*.................................................................................*/
 /*$break-large-desktop: 2500px;*/
@@ -1251,10 +1271,8 @@ div.collection2 {
 @media screen and (max-width: 1000px) {
   .carousel-cell {
     width: 100% !important; }
-
   div.collection2 .carousel-cell .caption {
     visibility: visible; }
-
   div.collection2 .products {
     width: 100%;
     margin-left: 0; }
@@ -1271,37 +1289,39 @@ div.collection2 {
         flex-direction: column;
         align-items: center;
         text-align: center; } }
+
 @media screen and (max-width: 767px) {
   div.collection2 .products {
     margin-top: 50px; }
-
   div.collection2 .products .products-ul .product .caption {
     visibility: visible; }
-
   div.collection2 .products .products-ul .product {
     min-height: 350px;
     width: 100%; }
-
   div.collection2 .featured {
     left: 5%; }
-
   div.collection2 .view-all {
     right: 5%; } }
+
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*.................................................................................*/
 /*$break-large-desktop: 2500px;*/
@@ -1372,8 +1392,8 @@ a {
   font-family: "neutralreg", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     a {
       font-size: 12px;
@@ -1385,8 +1405,8 @@ h3 a {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
   color: #e2e2e2; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h3 a {
@@ -1399,8 +1419,8 @@ h4 a {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h4 a {
       font-size: 16px;
@@ -1416,14 +1436,14 @@ h4 a {
   .a-hover:hover {
     color: #F5F5F5;
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
     @media only screen and (min-width: 0px) and (max-device-width: 767px) {
       .a-hover:hover {
         color: #000000 !important; } }
@@ -1440,8 +1460,8 @@ p {
   font-family: "neutralreg", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     p {
       font-size: 12px;
@@ -1453,8 +1473,8 @@ h1 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 2px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h1 {
       font-size: 25px;
@@ -1466,8 +1486,8 @@ h2 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 0px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h2 {
       font-size: 20px;
@@ -1479,8 +1499,8 @@ h3 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h3 {
       font-size: 18px;
@@ -1492,8 +1512,8 @@ h4 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h4 {
       font-size: 16px;
@@ -1520,9 +1540,11 @@ table {
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*.................................................................................*/
 /*$break-large-desktop: 2500px;*/
@@ -1658,21 +1680,26 @@ table {
       justify-content: center;
       padding: 25px;
       padding-bottom: 150px; } }
+
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*.................................................................................*/
 /*$break-large-desktop: 2500px;*/
@@ -1743,8 +1770,8 @@ a {
   font-family: "neutralreg", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     a {
       font-size: 12px;
@@ -1756,8 +1783,8 @@ h3 a {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
   color: #e2e2e2; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h3 a {
@@ -1770,8 +1797,8 @@ h4 a {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h4 a {
       font-size: 16px;
@@ -1787,14 +1814,14 @@ h4 a {
   .a-hover:hover {
     color: #F5F5F5;
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/
     /*  @if $media == large-desktop {
-        @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-      }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
     @media only screen and (min-width: 0px) and (max-device-width: 767px) {
       .a-hover:hover {
         color: #000000 !important; } }
@@ -1811,8 +1838,8 @@ p {
   font-family: "neutralreg", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     p {
       font-size: 12px;
@@ -1824,8 +1851,8 @@ h1 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 2px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h1 {
       font-size: 25px;
@@ -1837,8 +1864,8 @@ h2 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 0px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h2 {
       font-size: 20px;
@@ -1850,8 +1877,8 @@ h3 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h3 {
       font-size: 18px;
@@ -1863,8 +1890,8 @@ h4 {
   font-family: "neutralbold", helvetica, sans-serif;
   letter-spacing: 1px;
   /*  @if $media == large-desktop {
-      @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
-    }*/ }
+    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }
+  }*/ }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     h4 {
       font-size: 16px;
@@ -1891,9 +1918,11 @@ table {
 @font-face {
   font-family: neutralbold;
   src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
+
 @font-face {
   font-family: neutralreg;
   src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
+
 /*....................................................................................*/
 /*.................................................................................*/
 /*$break-large-desktop: 2500px;*/
@@ -1997,6 +2026,7 @@ table {
     .collection-page .heading-wrap .filter {
       max-width: 100%;
       align-self: auto; } }
+
 [include*="form-input-select()"] {
   display: block;
   padding: 0;
@@ -2006,8 +2036,8 @@ table {
   /* START OF UGLY BROWSER-SPECIFIC HACKS */
   /* ----------------------------------  */
   /* FIREFOX won't let us hide the native select arrow, so we have to make it wider than needed and clip it via overflow on the parent container.
-     The percentage width is a fallback since FF 4+ supports calc() so we can just add a fixed amount of extra width to push the native arrow out of view. We're applying this hack across all FF versions because all the previous hacks were too fragile and complex.
-     You might want to consider not using this hack and using the native select arrow in FF. Note this makes the menus wider than the select button because they display at the specified width and aren't clipped. Targeting hack via http://browserhacks.com/#hack-758bff81c5c32351b02e10480b5ed48e */
+   The percentage width is a fallback since FF 4+ supports calc() so we can just add a fixed amount of extra width to push the native arrow out of view. We're applying this hack across all FF versions because all the previous hacks were too fragile and complex.
+   You might want to consider not using this hack and using the native select arrow in FF. Note this makes the menus wider than the select button because they display at the specified width and aren't clipped. Targeting hack via http://browserhacks.com/#hack-758bff81c5c32351b02e10480b5ed48e */
   /* Show only the native arrow */
   color: black;
   display: block;
@@ -2052,28 +2082,28 @@ table {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   [include*="form-input-select()"] select::-ms-expand {
     display: none; }
-
   [include*="form-input-select()"] select:focus::-ms-value {
     background: transparent;
     color: #000; } }
+
 @-moz-document url-prefix() {
   [include*="form-input-select()"] {
     overflow: hidden; }
-
   [include*="form-input-select()"] select {
     width: 120%;
     width: calc(100% + 3em);
     /* Firefox focus has odd artifacts around the text, this kills that. See https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-focusring */ }
-
   @supports (-moz-appearance: none) {
     [include*="form-input-select()"] select {
       width: 100%; } }
   [include*="form-input-select()"] select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000; } }
+
 @supports (-moz-appearance: none) {
   [include*="form-input-select()"] {
     width: 100%; } }
+
 [include*="form-input-select()"]::before, [include*="form-input-select()"]::after {
   content: '';
   display: block;
@@ -2092,9 +2122,9 @@ table {
 @-moz-document url-prefix() {
   [include*="form-input-select()"] {
     border-right: 3px solid black; }
-
   [include*="form-input-select()"]:hover {
-    border-right: 3px solid #black; } }
+    border-right: 3px solid black; } }
+
 [include*="form-input-select()"]:hover select {
   -webkit-box-shadow: 0 2px 3px rgba(0, 91, 166, 0.1) inset;
   box-shadow: 0 2px 3px rgba(0, 91, 166, 0.1) inset;
@@ -2185,7 +2215,6 @@ html {
 @media screen and (max-width: 1022px) {
   h2 {
     font-size: 36px; }
-
   .mailing-list .form-container {
     flex-direction: column; }
     .mailing-list .form-container label {
@@ -2195,10 +2224,12 @@ html {
       font-size: 14px; }
     .mailing-list .form-container button {
       width: 140px; } }
+
 @media screen and (max-width: 767px) {
   .skinny h2 {
     font-size: 24px;
     text-align: center; } }
+
 .single {
   margin-top: 150px;
   position: relative;
@@ -2292,10 +2323,8 @@ html {
 @media screen and (max-width: 1000px) {
   .single {
     padding: 0 5%; }
-
   .single .left .title h3 {
     line-height: 30px; }
-
   .single .left {
     position: absolute;
     position: relative;
@@ -2304,13 +2333,13 @@ html {
     padding-bottom: 50px;
     width: 100%;
     z-index: 10; }
-
   .single .right {
     width: 100%;
     margin-left: auto;
     margin-top: 0;
     right: 0;
     /* top: 50px; */ } }
+
 div.video {
   position: relative;
   display: flex;
@@ -2343,6 +2372,7 @@ video {
     .float-logo img {
       max-width: 100%;
       max-height: 100%; } }
+
 .enla {
   background: url(../assets/images/emonite.jpg) no-repeat center top;
   background-size: 100% auto;
@@ -2408,9 +2438,9 @@ video {
     width: 90%;
     margin-top: 100px;
     margin-bottom: 50px; }
-
   .enla .bit-widget-container {
     width: 90%; } }
+
 .news {
   background-color: black;
   min-height: 400px;
@@ -2475,6 +2505,7 @@ video {
       max-height: 300px;
       margin-top: 1em;
       margin-bottom: 2em; } }
+
 @media screen and (max-width: 1000px) {
   .news .caption {
     align-self: flex-end;
@@ -2484,29 +2515,27 @@ video {
     top: auto;
     bottom: 10%;
     visibility: visible; } }
+
 @media screen and (max-width: 767px) {
   .news {
     padding-bottom: 50px; }
-
   .news .news-items {
     padding: 25px 0;
     padding-top: 170px;
     width: 90%;
     margin-left: 5%; }
-
   .news .news-items .item {
     width: 100%;
     max-height: 450px;
     margin-bottom: 2em; }
-
   .news .news-nav .news-title {
     margin-top: 100px;
     margin-left: 5%; }
-
   .news .view-all {
     top: 100px;
     right: 5%;
     font-family: "neutralreg", helvetica, sans-serif; } }
+
 footer {
   background-color: #F5F5F5;
   min-height: 400px; }
@@ -2573,6 +2602,7 @@ footer {
     margin-left: 5%; }
     footer .footer-wrap .col-lg {
       width: 20%; } }
+
 @media screen and (max-width: 767px) {
   footer .footer-wrap {
     flex-direction: column;
@@ -2591,6 +2621,7 @@ footer {
       width: 50%;
       height: auto;
       text-align: left; } }
+
 html {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -2604,5 +2635,3 @@ html {
   .site-wrap {
     transition: 1s all;
     margin-top: 80px; } }
-
-/*# sourceMappingURL=style.css.map */
