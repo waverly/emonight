@@ -18,16 +18,11 @@ window.onload = function(){
     lastY = el.scrollTop();
 
     el.on('scroll', function() {
-        // get current scroll position
         var currY = el.scrollTop(),
-        // determine current scroll direction
         y = (currY > lastY) ? 'down' : ((currY === lastY) ? 'none' : 'up');
-
-        console.log(currY, lastY, y);
 
         if (y === 'down'){
           if (currY > 10){
-          console.log('nav should have small class');
             nav.classList.add("small");
             if (sitewrap){
               sitewrap.classList.add('active');
@@ -39,7 +34,6 @@ window.onload = function(){
         }
         else if (y === 'up'){
           if (currY > 10){
-            console.log('scrolling upwards - nav should not have small class');
             nav.classList.remove("small");
             if (sitewrap){
               sitewrap.classList.remove('active');
@@ -69,14 +63,9 @@ window.onload = function(){
           para.forEach( (p) => {
             p.classList.add('active');
           } );
-        } else {
-
         }
         position = scroll;
       });
-    }
-    else if (window.outerWidth < 1300){
-
     }
   }
 }
@@ -97,7 +86,6 @@ burger.addEventListener("click", ()=>{
 });
 
 // clicking on any link in mobile will close menu
-
 const navLinks = document.querySelectorAll('nav a');
 navLinks.forEach((navLink) => {
   navLink.addEventListener("click", ()=>{
