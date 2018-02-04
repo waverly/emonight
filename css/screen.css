@@ -610,7 +610,7 @@ nav {
     nav .nav-social .fa {
       font-size: 1.5em; }
     nav .nav-social .fa-2x {
-      font-size: 1.3em; }
+      font-size: .9em; }
     nav .nav-social .social-ul li {
       padding: 0 .5em;
       padding-top: .4em; }
@@ -659,7 +659,8 @@ nav.small {
       position: fixed;
       right: 0;
       top: 0; }
-    nav .nav-social, nav .nav-items {
+    nav .nav-social,
+    nav .nav-items {
       display: none; }
     nav .nav-social {
       width: 100vw;
@@ -688,7 +689,8 @@ nav.small {
   nav.expand {
     height: 100vh;
     background: white; }
-    nav.expand .nav-social, nav.expand .nav-items {
+    nav.expand .nav-social,
+    nav.expand .nav-items {
       display: block; } }
 
 /*....................................SCSS VARIABLES..................................*/
