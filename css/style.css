@@ -48,11 +48,11 @@ table {
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*.................................................................................*/
@@ -271,21 +271,21 @@ table {
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*.................................................................................*/
@@ -504,11 +504,11 @@ table {
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*.................................................................................*/
@@ -696,21 +696,21 @@ nav.small {
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*.................................................................................*/
@@ -929,11 +929,11 @@ table {
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*.................................................................................*/
@@ -966,21 +966,21 @@ div.collection1 {
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*.................................................................................*/
@@ -1199,11 +1199,11 @@ table {
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*.................................................................................*/
@@ -1308,21 +1308,21 @@ div.collection2 {
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*.................................................................................*/
@@ -1541,11 +1541,11 @@ table {
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*.................................................................................*/
@@ -1686,21 +1686,21 @@ table {
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*.................................................................................*/
@@ -1919,11 +1919,11 @@ table {
 /*....................................SCSS VARIABLES..................................*/
 @font-face {
   font-family: neutralbold;
-  src: url("NeutralStd-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: neutralreg;
-  src: url("NeutralStd-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NeutralStd-Regular.ttf") format("truetype"); }
 
 /*....................................................................................*/
 /*.................................................................................*/
@@ -2637,3 +2637,5 @@ html {
   .site-wrap {
     transition: 1s all;
     margin-top: 80px; } }
+
+/*# sourceMappingURL=style.css.map */

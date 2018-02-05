@@ -941,21 +941,21 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/screen.css": {
+	"\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/screen-min.css",
+		"oAP": "\/css\/style-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/css\/screen.css.map": {
+	"\/css\/style.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/css\/screen.css.map",
+		"oAP": "\/css\/style.css.map",
 		"oF": 0
 		},
 	"\/css\/style.scss": {
@@ -964,7 +964,7 @@
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
 		"oAP": "\/css\/style.css",
 		"oF": 0,
