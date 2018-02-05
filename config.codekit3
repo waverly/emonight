@@ -964,10 +964,10 @@
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/screen.css",
-		"oF": 2,
+		"oAP": "\/css\/style.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
