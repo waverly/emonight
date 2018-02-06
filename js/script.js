@@ -3,8 +3,24 @@
 window.onload = function(){
   // minimize nav, add body/parallax margin-top on scroll
   const nav = document.querySelector('nav');
+  console.log(nav);
   const body = document.querySelector('body');
   const sitewrap = document.querySelector('.site-wrap');
+
+  // mobile menu on Click
+  const burger = document.querySelector('burger');
+  burger.addEventListener("click", ()=>{
+    burger.classList.toggle("active");
+    nav.classList.toggle("expand");
+  });
+
+  // clicking on any link in mobile will close menu
+  const navLinks = document.querySelectorAll('nav a');
+  navLinks.forEach((navLink) => {
+    navLink.addEventListener("click", ()=>{
+      nav.classList.toggle("expand");
+    })
+  })
 
 
   if (window.innerWidth > 1299){
@@ -78,20 +94,7 @@ products.forEach( (product) => {
   product.onmouseout = function(){ product.classList.remove("active");}
 })
 
-// mobile menu on Click
-const burger = document.querySelector('burger');
-burger.addEventListener("click", ()=>{
-  burger.classList.toggle("active");
-  nav.classList.toggle("expand");
-});
 
-// clicking on any link in mobile will close menu
-const navLinks = document.querySelectorAll('nav a');
-navLinks.forEach((navLink) => {
-  navLink.addEventListener("click", ()=>{
-    nav.classList.toggle("expand");
-  })
-})
 
 // collection 3
 const colItems = document.querySelectorAll('.col-item');
